@@ -1,5 +1,6 @@
-[gd_scene load_steps=12 format=3 uid="uid://dk4e3jrrypbr3"]
+[gd_scene load_steps=13 format=3 uid="uid://dk4e3jrrypbr3"]
 
+[ext_resource type="Script" uid="uid://bkcbwd4tojabr" path="res://Scenes/player.gd" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://usxnpq33vcfn" path="res://Assets/frogs/ToxicFrogPurpleWhite_Idle.png" id="1_v0iea"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cvnsp"]
@@ -70,13 +71,14 @@ animations = [{
 radius = 8.0
 
 [node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_cvnsp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(1, -10)
 sprite_frames = SubResource("SpriteFrames_tx1dd")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.814537
+frame_progress = 0.690411
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, -8)
